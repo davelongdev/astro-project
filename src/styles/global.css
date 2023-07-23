@@ -54,11 +54,13 @@ h1 {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    color: #1e2633;
 }
 
 .nav-links a:hover,
 a:focus {
     background-color: #1a396b;
+    color: #f1f5f9;
 }
 
 .expanded {
