@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import atom from "../../src/images/atom.svg";
 ---
 
 <BaseLayout>
@@ -18,7 +19,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     need help with something relating to programming, feel free to get in touch.
   </p>
   <div class="container">
-    <img class="atom" src="../../public/atom.svg" alt="depiction of an atom" />
+    <img class="atom" src={atom} alt="depiction of an atom" />
   </div>
   <p>
     NOTE: This web site is under construction. I will be adding to it and
