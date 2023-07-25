@@ -1,10 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import atom from "../../src/images/atom.svg";
+import headshot from "../images/headshot.webp";
 ---
 
 <BaseLayout>
   <h1>Software Development</h1>
+  <div class="container-headshot">
+    <img class="headshot" src={headshot} alt="headshot of Dave Long" />
+  </div>
   <h2>Building, Teaching, and Learning</h2>
   <p>
     Hi. Welcome to davelong.dev. I am a software developer in the early stages
@@ -35,5 +39,15 @@ import atom from "../../src/images/atom.svg";
   .atom {
     width: 200px;
     height: 200px;
+  }
+
+  .container-headshot {
+    display: flex;
+    justify-content: center;
+  }
+  .headshot {
+    max-width: 25vw;
+    border-radius: 25px;
+    margin: 2rem;
   }
 </style>
