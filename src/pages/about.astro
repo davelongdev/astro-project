@@ -3,10 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About Me";
 import atom2 from "../images/atom2.svg";
 import bio from "../images/bio.svg";
+import headshot from "../images/headshot.webp";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>Background and Education</h1>
+  <div class="container-headshot">
+    <img class="headshot" src={headshot} alt="headshot of Dave Long" />
+  </div>
   <h2>Early Years with Computers and Programming</h2>
   <p>
     Since I was young, I’ve had an interest in computers and programming. went
@@ -64,6 +67,13 @@ import bio from "../images/bio.svg";
 </BaseLayout>
 
 <style>
+  .container-headshot {
+    display: flex;
+    justify-content: center;
+  }
+  .headshot {
+    max-width: 25vw;
+  }
   .container {
     display: flex;
     justify-content: center;
