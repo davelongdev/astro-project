@@ -5,12 +5,17 @@ import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <header>
-  <nav class="nav-container">
-    <div>
-      <Navigation />
-    </div>
-    <div>
+  <div class="header-container">
+    <nav class="nav-container">
+      <div class="nav-hamburger-container">
+        <Hamburger />
+      </div>
+      <div class="nav-links-container">
+        <Navigation />
+      </div>
+    </nav>
+    <div class="nav-themeicon-container">
       <ThemeIcon />
     </div>
-  </nav>
+  </div>
 </header>
