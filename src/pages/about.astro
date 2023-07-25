@@ -1,13 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About Me";
+import atom2 from "../images/atom2.svg";
+import bio from "../images/bio.svg";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>Background and Education</h1>
   <h2>Early Years with Computers and Programming</h2>
   <p>
-    Since I was young, I’ve had an interest in computers and programming. I went
+    Since I was young, I’ve had an interest in computers and programming. went
     to elementary school in the 80s, and my family had a Commodore 64 computer.
     It was glorious. It was a large, curved plastic box with a keyboard that had
     a computer in it. You plugged it into a power supply and a color TV. When
@@ -47,10 +49,31 @@ const pageTitle = "About Me";
     then jumped into HTML, CSS, and Javascript, along with other front-end web
     development skills.
   </p>
+  <div class="container">
+    <img class="atom2" src={atom2} alt="depiction of an atom-like structure" />
+  </div>
   <h2>Open to Collaborations</h2>
   <p>
     If you’re interested in collaborating on a project or building a web site
     together, or if you’re also learning to code and you get stuck and want to
     talk things over, feel free to get in touch with me
   </p>
+  <div class="container">
+    <img class="bio" src={bio} alt="depiction of an atom-like structure" />
+  </div>
 </BaseLayout>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .atom2 {
+    width: 200px;
+    height: 200px;
+  }
+  .bio {
+    width: 200px;
+    height: 200px;
+  }
+</style>
