@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
+import headshot from "../images/headshot.webp";
 
 const { pageTitle } = Astro.props;
 ---
@@ -13,6 +14,33 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="davelong.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://davelong.dev/" />
+    <meta property="og:locale" content="en" />
+    <meta
+      property="og:description"
+      content="dave long - software development."
+    />
+    <meta property="og:site_name" content="davelong.dev" />
+    <meta property="og:image" content="{headshot}" />
+    <meta property="og:image:alt" content="dave long - software development." />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="davelong.dev" />
+    <meta name="twitter:title" content="davelong.dev" />
+    <meta
+      name="twitter:description"
+      content="dave long - software development"
+    />
+    <meta name="twitter:image" content="../src/images/headshot.webp" />
+    <meta
+      name="twitter:image:alt"
+      content="dave long - software development."
+    />
   </head>
   <body>
     <Header />
