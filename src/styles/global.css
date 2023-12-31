@@ -3,12 +3,21 @@ html {
     font-family: sans-serif;
 }
 
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
+
+}
+
+main {
+    max-width: 80ch;
 }
 
 * {
