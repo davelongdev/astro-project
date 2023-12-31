@@ -3,26 +3,27 @@ html {
     font-family: sans-serif;
 }
 
-.main-container {
-    display: flex;
-    justify-content: center;
-}
-
-body {
-    margin: 0 auto;
-    width: 100%;
-    padding: 1rem;
-    line-height: 1.5;
-
-}
-
-main {
-    max-width: 80ch;
-}
-
 * {
     box-sizing: border-box;
 }
+
+body {
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 150ch;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 80ch;
+}
+
 
 h1 {
     margin: 1rem 0;
@@ -39,9 +40,18 @@ p {
     font-size: 1.5rem;
 }
 
-.header-container {
+footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* main styles */
+
+.main-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* nav styles */
