@@ -1,4 +1,4 @@
-# Sample Astro Project
+# Astro Site Template
 
 ## Project Info
 This is a project made with the Astro web framework.  I started off by following the getting started tutorial on [astro.build](astro.build) in 2023.  The original project can be found [here](https://github.com/davelongdev/astro-blog-project).
