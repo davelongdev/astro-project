@@ -3,10 +3,10 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Blog Post'
 pubDate: 07/01/23 
 description: 'This is the first post of my new blog.'
-author: 'Dave Long'
+author: 'Author'
 image:
-    url: ../../circles-lines.svg
-    alt: "coding image"
+    url: ../../../public/landscape.svg
+    alt: "landscape image"
 tags: ["tech", "blogging", "learning in public"]
 ---
 

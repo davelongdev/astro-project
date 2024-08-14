@@ -1,34 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import atom from "../../src/images/atom.svg";
-import headshot from "../images/headshot.webp";
+import laptop from "../../public/laptop.svg";
+import headshot from "../../public/headshot.svg";
 
-const pageTitle = "Software Development"
+const pageTitle = "Homepage (H1)"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <div class="container-headshot">
-    <img class="headshot" src={headshot} alt="headshot of Dave Long" />
+    <img class="headshot" src={headshot} alt="a headshot"} />
   </div>
-  <h2>Building, Teaching, and Learning</h2>
+  <h2>Subheading (H2)</h2>
   <p>
-    Hi. Welcome to davelongdev.com. I am a software developer in the early stages
-    of a new career. At the moment, I'm mostly focused on front-end web
-    development, although I have many interests within the field of computer
-    science, such as networking, web scraping, AI / Machine Learning, back-end development,
-    and full-stack development. I realling enjoy coding and working with
-    computers.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsa perspiciatis suscipit ea molestiae ex minima aut illum unde nisi autem, obcaecati in sunt dignissimos facere non incidunt dolorem magnam.
   </p>
   <p>
-    If you're interested in working together, collaborating on a project, or
-    need help with something relating to programming, feel free to get in touch.
+  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
   </p>
   <div class="container">
-    <img class="atom" src={atom} alt="depiction of an atom" />
+    <img class="laptop" src={laptop} alt="depiction of a laptop" />
   </div>
   <p>
-    NOTE: This web site is under construction. I will be adding to it and
-    updating the site over the coming weeks and months.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis reiciendis, enim, repellat sit excepturi quaerat esse deleniti repudiandae, aperiam iure iste! Rerum aperiam voluptates atque repellat nam eos perferendis.
   </p>
 </BaseLayout>
 
@@ -37,7 +30,7 @@ const pageTitle = "Software Development"
     display: flex;
     justify-content: center;
   }
-  .atom {
+  .laptop {
     width: 200px;
     height: 200px;
   }
